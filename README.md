@@ -20,40 +20,36 @@
 
 ## Overview
 
-_**Emma's eCommerce** is a full stack app that allows administrators to keep track of sellers, each of their customers, and the items that customers buy. The site comes complete with 10 items for customers to pick from
+_**Emma's eCommerce** is a full stack app that allows administrators to keep track of sellers, each of their customers, and the items that customers buy
 
-
-<br>
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
-_The **Emma's eCommerce** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
-
-<br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
-
+- Create skeleton/structure files for back end and front end.
+- Back End CRUD: build Rails server, database with MVC logic; build functionality and test CRUD in Postman.
+- Front End CRUD: Render sellers, customers and items; create edit and delete functionality in Customer Details page; create new sellers and users in seperate Create pages
+- CSS for all screens and components, including Grid and Flexbox
+- Deployment to Heroku and Netlify.
 <br>
 
 ### Libraries and Dependencies
 
 > Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
 
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Library      | Description                                                               |
+| :--------------: | :------------------------------------------------------------------------ |
+|      React       | JS library for building user interfaces                                   |
+|   React Router   | tool that allows you to handle routes in a web app with dynamic routing   |
+|     Rails        | web framework that combines Ruby with JS                                  |
+|     Ruby         | open source programming language with focus on simplicity and productivity|
+|     Bundler      | ensures that the needed gems are present in development                   |
+|     Gem          | package manager: extend or modify funcitonality in Ruby apps              |
+
+
 
 <br>
 
@@ -142,14 +138,16 @@ src
 > Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
 
 <br>
-
-***
-
+https://lucid.app/invitations/accept/f0bde52d-fbcf-4883-8974-e57326d754bc
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
 ***
+- add CRUD functionality for items on website
+- build OAuth functionality for admin (username and password)
+- Assign prices to items and total prices for customers with multiple items
+
+
 
 ## Code Showcase
 
