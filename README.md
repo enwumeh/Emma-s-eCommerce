@@ -20,7 +20,7 @@
 
 ## Overview
 
-_**Emma's eCommerce** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**Emma's eCommerce** is a full stack app that allows administrators to keep track of sellers, each of their customers, and the items that customers buy. The site comes complete with 10 items for customers to pick from
 
 
 <br>
