@@ -57,35 +57,11 @@ _**Emma's eCommerce** is a full stack app that allows administrators to keep tra
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-
-![Dummy Link](url)
-
-- Desktop Landing
-
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
+https://app.lucidchart.com/invitations/accept/4394e4b8-69a1-4320-a209-46ecbb08ce6c
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
+https://whimsical.com/DVc231xT1wrCbskkTUqWQZ
 
 #### Component Hierarchy
 
@@ -100,7 +76,17 @@ src
       |__ images
       |__ mockups
 |__ components/
+  |__ shared
       |__ Header.jsx
+      |__ Footer.jsx
+      |__ Layout.jsx
+|__ screens/
+      |__ Customers.jsx
+      |__ CustomerEdit.jsx
+      |__ CustomerCreate.jsx
+      |__ CustomerDetail.jsx
+      |__ Sellers.jsx
+      |__ SellerCreate.jsx
 |__ services/
 
 ```
@@ -109,25 +95,32 @@ src
 
 > Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
-|  Component   |    Type    | state | props | Description                                                      |
-| :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|     Component      |    Type    | state | props | Description                                                            |
+|    :----------:    | :--------: | :---: | :---: | :---------------------------------------------------------------       |
+|    Layout          | functional |   n   |   y   | _The layout will contain the nav header and footer components          |
+|   Customers        | functional |   n   |   y   | _Customers will render all customers for a given seller._              |
+|   CustomerEdit     | functional |   y   |   y   | _CustomerEdit will render a form needed to edit a customer's details_  |
+|   CustomerCreate   | functional |   y   |   y   | _CustomerCreate will render a form needed to add a new customer._      |
+|   CustomerDetail   | functional |   y   |   y   | _CustomerDetail will show all items a customer selected_               |
+|   Sellers          | functional |   y   |   n   | _This will be the landing page of the app, and show all the sellers._  |
+|   SellersCreate    | functional |   n   |   y   | _This will be a form to add a seller to the site._                     |
+
 
 #### Time Estimates
 
 > Use this section to estimate the time necessary to build out each of the components you've described above.
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Task                        | Priority           | Estimated Time | Time Invested | Actual Time |
+| --------------------------- | :----------------: | :------------: | :-----------: | :---------: |
+| Build out rails server      |         H          |     5 hrs      |       hrs     |     TBD     |
+| MVC DB funcitonality        |         H          |     5 hrs      |       hrs     |     TBD     |
+| Create CRUD Actions FRONTEND|         H          |     6 hrs      |       hrs     |     TBD     |
+| Create CRUD Actions BACKEND |         H          |     6 hrs      |       hrs     |     TBD     |
+|Render components/React skeleton.      H          |     8 hrs      |       hrs     |     TBD     |
+| Deployment Back and Front   |         H          |     1 hrs      |       hrs     |     TBD     |
+| CSS for screens+components  |         H          |     3 hrs      |       hrs     |     TBD     |
+| TOTAL                       |                    |     34 hrs     |       hrs     |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
@@ -135,7 +128,6 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
 
 <br>
 https://lucid.app/invitations/accept/f0bde52d-fbcf-4883-8974-e57326d754bc
