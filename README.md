@@ -62,7 +62,6 @@ https://app.lucidchart.com/invitations/accept/4394e4b8-69a1-4320-a209-46ecbb08ce
 #### Component Tree
 
 https://whimsical.com/DVc231xT1wrCbskkTUqWQZ
-
 #### Component Hierarchy
 
  
@@ -85,9 +84,9 @@ src
       |__ CustomerEdit.jsx
       |__ CustomerCreate.jsx
       |__ CustomerDetail.jsx
+      |__ Items.jsx
       |__ Sellers.jsx
       |__ SellerCreate.jsx
-|__ services/
 
 ```
 
