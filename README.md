@@ -20,7 +20,7 @@
 
 ## Overview
 
-_**Emma's eCommerce** is a full stack app that allows administrators to keep track of sellers, each of their customers, and the items that customers buy
+_**Emma's eCommerce** is a full stack app, that allows administrators to keep track of sellers, each of their customers, and the items that customers buy
 
 
 ## MVP
