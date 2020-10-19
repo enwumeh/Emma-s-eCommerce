@@ -65,7 +65,7 @@ https://whimsical.com/DVc231xT1wrCbskkTUqWQZ
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
+ 
 
 ``` structure
 
@@ -93,7 +93,6 @@ src
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
 |     Component      |    Type    | state | props | Description                                                            |
 |    :----------:    | :--------: | :---: | :---: | :---------------------------------------------------------------       |
@@ -108,7 +107,6 @@ src
 
 #### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
 
 | Task                        | Priority           | Estimated Time | Time Invested | Actual Time |
 | --------------------------- | :----------------: | :------------: | :-----------: | :---------: |
@@ -143,8 +141,6 @@ https://lucid.app/invitations/accept/f0bde52d-fbcf-4883-8974-e57326d754bc
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
