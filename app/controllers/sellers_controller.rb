@@ -51,7 +51,7 @@ class SellersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def seller_params
-      params.require(:seller).permit(:username, :email, :password_digest)
+      params.require(:seller).permit(:username, :email, :password)
     end
 end
 
