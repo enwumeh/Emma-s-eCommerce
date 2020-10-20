@@ -56,7 +56,7 @@ _**Emma's eCommerce** is a full stack app, that allows administrators to keep tr
 
 #### Wireframes
 
-https://app.lucidchart.com/invitations/accept/4394e4b8-69a1-4320-a209-46ecbb08ce6c
+https://app.lucidchart.com/invitations/accept/9ff2914f-8708-4cc2-b72b-e0861aaf584c
 
 #### Component Tree
 
@@ -79,13 +79,14 @@ src
       |__ Footer.jsx
       |__ Layout.jsx
 |__ screens/
-      |__ Customers.jsx
-      |__ CustomerEdit.jsx
+ |__ MainContainer.jsx
+      |__ Login.jsx
+      |__ Register.jsx
+      |__ CustomerList.jsx
       |__ CustomerCreate.jsx
       |__ CustomerDetail.jsx
-      |__ Items.jsx
-      |__ Sellers.jsx
-      |__ SellerCreate.jsx
+      |__ ItemsList.jsx
+      |__ ItemEdit.jsx
 
 ```
 
@@ -95,12 +96,13 @@ src
 |     Component      |    Type    | state | props | Description                                                            |
 |    :----------:    | :--------: | :---: | :---: | :---------------------------------------------------------------       |
 |    Layout          | functional |   n   |   y   | _The layout will contain the nav header and footer components          |
-|   Customers        | functional |   n   |   y   | _Customers will render all customers for a given seller._              |
-|   CustomerEdit     | functional |   y   |   y   | _CustomerEdit will render a form needed to edit a customer's details_  |
+|    Login           | functional |   n   |   y   | _Login will give access to reegistered sellers._                       |
+|   Register         | functional |   n   |   y   | _Register will create an account for new sellers._                     |
+|   CustomerList     | functional |   y   |   y   | _CustomerEdit will render a form needed to edit a customer's details_  |
 |   CustomerCreate   | functional |   y   |   y   | _CustomerCreate will render a form needed to add a new customer._      |
 |   CustomerDetail   | functional |   y   |   y   | _CustomerDetail will show all items a customer selected_               |
-|   Sellers          | functional |   y   |   n   | _This will be the landing page of the app, and show all the sellers._  |
-|   SellersCreate    | functional |   n   |   y   | _This will be a form to add a seller to the site._                     |
+|   ItemsList        | functional |   y   |   n   | _ItemsList will read all items._                                       |
+|   ItemEdit         | functional |   n   |   y   | _ItemsEdit will update one item._                                      |
 
 
 #### Time Estimates
@@ -126,13 +128,11 @@ src
 
 
 <br>
-https://lucid.app/invitations/accept/f0bde52d-fbcf-4883-8974-e57326d754bc
+https://app.lucidchart.com/invitations/accept/f0bde52d-fbcf-4883-8974-e57326d754bc
 ## Post-MVP
 
 
 ***
-- add CRUD functionality for items on website
-- build OAuth functionality for admin (username and password)
 - Assign prices to items and total prices for customers with multiple items
 
 
