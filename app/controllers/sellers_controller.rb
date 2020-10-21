@@ -2,17 +2,23 @@ class SellersController < ApplicationController
   #before_action :set_seller, only: [:show, :update, :destroy]
 
   # GET /sellers
-  def index
-    @sellers = Seller.all
+  #def index
+   # @sellers = Seller.all
 
-    render json: @sellers
-  end
+  #  render json: @sellers
+  #end
 
   # GET /sellers/1
   #def show
   #  render json: @seller
   #end
+  def add_item
+    @seller = Seller.find(params[:id])
+    @item = Item.find(params[:item_id])
+    @seller.items << @item
 
+    render json: @seller, include: items
+  end
   # POST /sellers
   def create
     @seller = Seller.new(seller_params)
