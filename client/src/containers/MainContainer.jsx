@@ -3,8 +3,7 @@ import { getAllCustomers } from '../services/customers';
 import { getAllItems, postItem, putItem } from '../services/items';
 import { Route, Switch, useHistory } from 'react-router-dom';
 // import Customers from '../screens/Customers';
-import Foods from '../screens/Items';
-// import FoodCreate from '../screens/FoodCreate';
+import Items from '../screens/Items';
 import ItemEdit from '../screens/ItemEdit';
 // import FoodDetail from '../screens/FoodDetail';
 
@@ -62,9 +61,9 @@ export default function MainContainer() {
         {/* <FoodDetail flavors={flavors} /> */}
       </Route>
       <Route path='/items'>
-        {/* <Items
+        <Items
           items={items}
-        /> */}
+        />
       </Route>
     </Switch>
   )
