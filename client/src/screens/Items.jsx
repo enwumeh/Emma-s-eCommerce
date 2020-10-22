@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { postItem } from "../services/items";
+import { postItem, destroyItem } from "../services/items";
 import "./Items.css";
 
 const Items = (props) => {
@@ -26,8 +26,10 @@ const Items = (props) => {
 
       {items.map((item) => (
         <div key={item.id}>
-           {item.name}
-          <Link to={`/items/${item.id}/edit`} className="items-rendered">
+          <span className="items-rendered">
+          {item.name}
+          </span>
+          <Link to={`/items/${item.id}/edit`}>
             <button className="edit-item">Edit</button>
           </Link>
           <button className="delete-item">Delete</button>

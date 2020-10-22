@@ -1,6 +1,6 @@
 .items-heading {
   color: #06376b;
-  font-size: 19px;
+  font-size: 22px;
 
 }
 
@@ -20,14 +20,29 @@
   background-color: rgb(161, 155, 147);
   padding: 75px;
 }
-.rendered-name {
+.items-rendered {
   text-decoration: none;
-  font-size: 19px;
+  font-size: 16px;
+  font-weight: bold;
   color: white;
   padding-top: 34px;
+  padding-right: 50px;
 }
 
 .edit-item {
-  margin: 8px;
+  margin: 11px;
+  border-radius: 30%;
+  background-color: #06376b;
+  color: white;
+
 }
+
+.delete-item {
+  margin: 11px;
+  border-radius: 30%;
+  background-color: #06376b;
+  color: white;
+
+}
+
 

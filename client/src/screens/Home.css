@@ -1,0 +1,18 @@
+.home-items {
+  color: #06376b;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+   flex-wrap: wrap; 
+  margin: 29px;
+}
+
+ul {
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+  height: 100vh;
+}
+ul li {
+  flex: 1 0 25%;
+}

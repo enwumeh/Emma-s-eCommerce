@@ -9,9 +9,13 @@ export default function Customers(props) {
       <h3 className="customers-heading">Customers</h3>
       {
         customers.map(customer => (
-          <p key={customer.id}>{customer.name}</p>
+          <div className="customer-text">
+            <p key={customer.id}>{customer.name}</p>
+          </div>
         ))
       }
+      <div className="blank">
+      </div>
     </div>
   )
 }

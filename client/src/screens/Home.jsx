@@ -1,14 +1,16 @@
 import React from 'react'
+import "./Home.css";
+
 
 
 export default function Home(props) {
   const { items } = props;
   return (
-    <div>
+    <ul>
       {items.map(item => (
-        <div key={item.id}>{item.name}</div>
+        <li key={item.id} className="home-items" >{item.name} </li>
       ))}
-      Home
-    </div>
+
+    </ul>
   )
 }

@@ -6,9 +6,11 @@ export default function Header(props) {
   const { currentSeller, handleLogout } = props;
 
   return (
+    
     <div className="main-header">
+      <br></br>
+      <br></br>
   <Link className="app-title" to='/'>Emma's eCommerce</Link>
-
       {
         currentSeller ?
           <span className='login-seller-info'>
