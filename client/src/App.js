@@ -5,11 +5,14 @@ import Login from './screens/Login';
 import Register from './screens/Register';
 import { loginSeller, registerSeller, removeToken, verifySeller } from './services/auth';
 
+
+
 import { Route, useHistory, Switch } from 'react-router-dom';
 import MainContainer from './containers/MainContainer';
 
 function App() {
   const [currentSeller, setCurrentSeller] = useState(null);
+  // const [items, setItems] = useState(null);
   const history = useHistory();
 
   useEffect(() => {
@@ -18,6 +21,7 @@ function App() {
       setCurrentSeller(sellerData)
     }
     handleVerify();
+    
   }, [])
 
   const handleLogin = async (loginData) => {

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { postItem } from "../services/items";
+import "./Items.css";
 
 const Items = (props) => {
   const { items } = props;
@@ -16,30 +18,29 @@ const Items = (props) => {
     setFormData({ ...formData, [name]: value });
   };
 
+  
+
   return (
-    <div>
-      <h3>Items</h3>
+    <div className="items-main">
+      <h3 className = "items-heading">Items</h3>
 
       {items.map((item) => (
         <div key={item.id}>
-          {/* each food name has a link to a route that includes the id of the food. */}
-          {/* this is the route to foodDetail.jsx */}
-          {/* <Link to={`/foods/${food.id}`}><p>{food.name}</p></Link> */}
-          <Link to={`/items/${item.id}/edit`}>
-            <button>Edit</button>
+           {item.name}
+          <Link to={`/items/${item.id}/edit`} className="items-rendered">
+            <button className="edit-item">Edit</button>
           </Link>
-          <button>Delete</button>
+          <button className="delete-item">Delete</button>
         </div>
       ))}
-      {/* here: the drop down create menu */}
 
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          // handleItemEdit(id, formData);
+          postItem(formData);
         }}
       >
-        <h3>Create Item</h3>
+        <h3 className="create-item-heading">Create Item</h3>
         <label>
           Name:
           <input
@@ -55,12 +56,9 @@ const Items = (props) => {
             onChange={handleChange}
           />
         </label>
-        <button>Create</button>
+        <button className="create-button">Create</button>
       </form>
 
-      <Link to="/items/new">
-        <button>Create</button>
-      </Link>
     </div>
   );
 };

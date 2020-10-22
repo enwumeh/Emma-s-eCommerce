@@ -11,7 +11,7 @@ Seller.destroy_all
 
 
 @seller = Seller.create(username: 'admin', email: 'admin@email.com', password: 'elephant3')
-puts "#{User.count} users created"
+
 
 @item = Item.create!(name: 'bike', price: 70, seller: @seller)
 @item = Item.create!(name: 'flat iron', price: 30, seller: @seller)
@@ -23,7 +23,13 @@ puts "#{User.count} users created"
 
 
 
-@customer = Customer.create!(name: "Billy Joe", address: '321 Oak Street, HI')
-@customer = Customer.create!(name: "Peggy Sue", address: '123 Elm Road, CA')
-@customer = Customer.create!(name: "Jamie Lynn", address: '567 Spruce Lane, CO')
-@customer = Customer.create!(name: "Amy Beth", address: '987 Fern Way, WY')
+@customer = Customer.create!(name: "Billy Joe", address: '321 Oak Street, HI', seller_id:@seller.id)
+
+@customer = Customer.create!(name: "Peggy Sue", address: '123 Elm Road, CA', seller_id:@seller.id)
+
+@customer = Customer.create!(name: "Jamie Lynn", address: '567 Spruce Lane, CO', seller_id:@seller.id)
+
+@customer = Customer.create!(name: "Amy Beth", address: '987 Fern Way, WY', seller_id:@seller.id)
+puts "#{Seller.count} users created"
+puts "#{Item.count} items created"
+puts "#{Customer.count} customers created"

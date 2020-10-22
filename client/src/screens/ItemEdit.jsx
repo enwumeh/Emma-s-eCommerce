@@ -41,8 +41,8 @@ export default function ItemEdit(props) {
         Name:
         <input
           type="text"
-          name='name'
-          value={formData.name}
+          name='price'
+          value={formData.price}
           onChange={handleChange}
         />
       </label>

@@ -1,0 +1,31 @@
+.items-customers-link{
+  color:#FE4A49
+  ;
+  font-size:25px;
+  font-weight: bold;
+  /* padding-bottom: 90px; */
+  margin: 90px;
+  text-decoration: none;
+}
+
+.app-title {
+  color:#4AD7D1;
+  font-size:40px;
+  text-decoration: none;
+  font-weight: 900;
+  float: left;
+}
+
+.main-header {
+  /* background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wallpaperflare.com%2Fsearch%3Fwallpaper%3Dempty%2Bnotebook&psig=AOvVaw3Bj8xF6GLgXbZEjT1SZ6ag&ust=1603454444134000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPCSlryTyOwCFQAAAAAdAAAAABAD'); */
+  background-color: rgb(161, 155, 147);
+
+}
+
+.login-seller-info{ 
+color: white;
+
+}
+/* #F1E821 */
+
+
