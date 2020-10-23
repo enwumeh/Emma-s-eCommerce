@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getAllCustomers } from "../services/customers";
-import { getAllItems, putItem } from "../services/items";
+import { getAllItems, putItem, destroyItem } from "../services/items";
 import { Route, Switch, useHistory } from "react-router-dom";
 import Customers from "../screens/Customers";
 import Items from "../screens/Items";
@@ -44,6 +44,15 @@ export default function MainContainer() {
     history.push("/items");
   };
 
+  const deleteItem = async (id) => {
+    await destroyItem(id);
+    setItems(prevState => prevState.filter(item => {
+      return item.id !== id
+    }))
+    history.push('/items');
+  }
+
+
   return (
     <Switch>
       <Route path="/customers">
@@ -58,7 +67,7 @@ export default function MainContainer() {
         <ItemEdit handleItemEdit={handleItemEdit} items={items} />
       </Route>
       <Route path="/items">
-        <Items items={items} />
+        <Items items={items} deleteItem={deleteItem}/>
       </Route>
       <Route path='/'>
         <Home items={items}  />

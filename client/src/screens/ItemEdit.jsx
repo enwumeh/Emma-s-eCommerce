@@ -41,6 +41,15 @@ export default function ItemEdit(props) {
         Name:
         <input
           type="text"
+          name='name'
+          value={formData.name}
+          onChange={handleChange}
+        />
+      </label>
+      <label>
+       Price:
+        <input
+          type="text"
           name='price'
           value={formData.price}
           onChange={handleChange}

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory} from "react-router-dom";
 import { postItem, destroyItem } from "../services/items";
 import "./Items.css";
 
 const Items = (props) => {
-  const { items } = props;
-
+  const { items, deleteItem } = props;
+  const history = useHistory();
   const [formData, setFormData] = useState({
     name: "",
     price: 0,
@@ -18,6 +18,7 @@ const Items = (props) => {
     setFormData({ ...formData, [name]: value });
   };
 
+
   
 
   return (
@@ -27,18 +28,21 @@ const Items = (props) => {
       {items.map((item) => (
         <div key={item.id}>
           <span className="items-rendered">
-          {item.name}
+            {item.name} {item.price}
           </span>
           <Link to={`/items/${item.id}/edit`}>
             <button className="edit-item">Edit</button>
           </Link>
-          <button className="delete-item">Delete</button>
+          <button onClick={(e) => {
+            deleteItem(item.id);
+            history.push('/items')
+        }} className="delete-item">Delete</button>
         </div>
       ))}
 
       <form
         onSubmit={(e) => {
-          e.preventDefault();
+          // e.preventDefault();
           postItem(formData);
         }}
       >
