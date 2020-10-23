@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useHistory} from "react-router-dom";
-import { postItem, destroyItem } from "../services/items";
+import { postItem } from "../services/items";
 import "./Items.css";
 
 const Items = (props) => {
@@ -27,8 +27,9 @@ const Items = (props) => {
 
       {items.map((item) => (
         <div key={item.id}>
+        
           <span className="items-rendered">
-            {item.name} {item.price}
+          ${item.price} {item.name} 
           </span>
           <Link to={`/items/${item.id}/edit`}>
             <button className="edit-item">Edit</button>

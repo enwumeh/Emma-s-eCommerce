@@ -1,18 +1,28 @@
 .home-items {
   color: #06376b;
   padding-top: 5px;
+  /* padding-bottom: 50px; */
   display: flex;
   flex-direction: column;
    flex-wrap: wrap; 
   margin: 29px;
+  font-size: 23px;
+  font-weight: bold;
 }
 
 ul {
   flex-direction: column;
   flex-wrap: wrap;
   display: flex;
-  height: 100vh;
+  height: 50vh;
 }
 ul li {
-  flex: 1 0 25%;
+  flex: 1 2 25%;
+}
+
+.welcome-home {
+font-size: 29px;
+color: white;
+font-weight: bold;
+padding-top: 60px;
 }
