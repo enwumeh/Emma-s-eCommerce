@@ -24,5 +24,52 @@ ul li {
 font-size: 29px;
 color: white;
 font-weight: bold;
-padding-top: 60px;
+padding-bottom: 90px;
+position: relative;
+top: 40px;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+
+  .home-items {
+    position: relative;
+    top: 20px;
+    color: rgb(230, 222, 222);
+    padding-top: 5px;
+    /* padding-bottom: 50px; */
+    display: flex;
+    flex-direction: column;
+     flex-wrap: wrap; 
+    margin: 29px;
+    font-size: 23px;
+    font-weight: bold;
+  }
+
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home-items {
+    color: rgb(93, 219, 219);
+    padding-top: 5px;
+    /* padding-bottom: 50px; */
+    /* display: flex; */
+    /* flex-direction: column;
+     flex-wrap: wrap;  */
+    margin: 29px;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    /* height: 25vh; */
+  }
+  ul li {
+    flex: 1 2 0%;
+  }
+  
 }

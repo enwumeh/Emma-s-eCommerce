@@ -6,6 +6,8 @@ import Customers from "../screens/Customers";
 import Items from "../screens/Items";
 import ItemEdit from "../screens/ItemEdit";
 import Home from "../screens/Home";
+import "./MainContainer.css";
+
 
 
 export default function MainContainer() {
@@ -54,6 +56,7 @@ export default function MainContainer() {
 
 
   return (
+    <div className="main-contain-style">
     <Switch>
       <Route path="/customers">
         <Customers customers={customers} />
@@ -72,6 +75,7 @@ export default function MainContainer() {
       <Route path='/'>
         <Home items={items}  />
       </Route>
-    </Switch>
+      </Switch>
+      </div>
   );
 }

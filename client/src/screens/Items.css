@@ -18,7 +18,7 @@
 
 .items-main {
   background-color: rgb(161, 155, 147);
-  padding: 75px;
+  /* padding: 75px; */
 }
 .items-rendered {
   text-decoration: none;

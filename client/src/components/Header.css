@@ -1,11 +1,12 @@
 .items-customers-link{
-  color:#f43131
-  ;
-  font-size:25px;
+  color:#f43131;
+  font-size:32px;
+  position: relative;
   font-weight: bold;
   /* padding-bottom: 90px; */
   margin: 90px;
   text-decoration: none;
+  /* height: 33px; */
 }
 
 .app-title {
@@ -16,17 +17,33 @@
   float: left;
 }
 
-.main-header {
-  /* background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wallpaperflare.com%2Fsearch%3Fwallpaper%3Dempty%2Bnotebook&psig=AOvVaw3Bj8xF6GLgXbZEjT1SZ6ag&ust=1603454444134000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPCSlryTyOwCFQAAAAAdAAAAABAD'); */
-  background-color: rgb(161, 155, 147);
+.header-main-div {
+  background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wallpaperflare.com%2Fsearch%3Fwallpaper%3Dempty%2Bnotebook&psig=AOvVaw3Bj8xF6GLgXbZEjT1SZ6ag&ust=1603454444134000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPCSlryTyOwCFQAAAAAdAAAAABAD');
+  /* background-color: rgb(161, 155, 147); */
+  background-color: darkblue;
+  padding-bottom: 60px;
+
 
 }
 
 .login-seller-info{ 
 color: white;
-/* float: right; */
+float: right;
+padding-right: 91px;
+/* padding-bottom: 82px; */
 
 }
-/* #F1E821 */
 
-
+.current-user {
+  font-size: 18px;
+}
+@media only screen and (max-width: 500px) {
+  .items-customers-link{
+    color:#f43131;
+    /* width: 75%; */
+    font-size:25px;
+    font-weight: bold;
+    margin: 90px;
+    text-decoration: none;
+  }
+}

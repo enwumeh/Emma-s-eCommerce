@@ -6,21 +6,21 @@ export default function Header(props) {
   const { currentSeller, handleLogout } = props;
 
   return (
-    
-    <div className="main-header">
+    <div className="header-main-div">
+    {/* <div className="main-header"> */}
       <br></br>
       <br></br>
   <Link className="app-title" to='/'>Emma's eCommerce</Link>
       {
         currentSeller ?
-          <span className='login-seller-info'>
-            <p>{currentSeller.username}</p>
+          <div className='login-seller-info'>
+            <p className="current-user">{currentSeller.username}</p>
             <button onClick={handleLogout}>Logout</button>
-          </span>
+          </div>
           :
           <Link to='/login'>Login/Register</Link>
       }
-      <hr />
+      {/* <hr /> */}
       {
         currentSeller &&
         <>
