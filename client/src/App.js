@@ -4,9 +4,6 @@ import Layout from './layouts/Layout';
 import Login from './screens/Login';
 import Register from './screens/Register';
 import { loginSeller, registerSeller, removeToken, verifySeller } from './services/auth';
-
-
-
 import { Route, useHistory, Switch } from 'react-router-dom';
 import MainContainer from './containers/MainContainer';
 

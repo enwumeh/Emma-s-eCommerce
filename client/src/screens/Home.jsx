@@ -1,13 +1,14 @@
 import React from "react";
-// import { loginSeller } from '../services/auth';
 import "./Home.css";
 
 export default function Home(props) {
-  const { items } = props;
+  const { items, seller } = props;
   return (
     <div>
       <p className="welcome-home">
-        Welcome seller! Here are your current items:
+        <p>
+          Welcome <span className="seller-word" >{seller.username}</span>! Here are your current items:</p>
+
       </p>
       <ul>
         {items.map((item) => (
@@ -19,5 +20,6 @@ export default function Home(props) {
         ))}
       </ul>
     </div>
+    
   );
 }

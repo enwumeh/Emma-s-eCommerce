@@ -7,7 +7,6 @@ export default function Header(props) {
 
   return (
     <div className="header-main-div">
-    {/* <div className="main-header"> */}
       <br></br>
       <br></br>
   <Link className="app-title" to='/'>Emma's eCommerce</Link>
@@ -20,7 +19,6 @@ export default function Header(props) {
           :
           <Link to='/login'>Login/Register</Link>
       }
-      {/* <hr /> */}
       {
         currentSeller &&
         <>

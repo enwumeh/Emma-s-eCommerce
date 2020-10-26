@@ -41,9 +41,8 @@ const Items = (props) => {
         </div>
       ))}
 
-      <form
+      <form class='create-form'
         onSubmit={(e) => {
-          // e.preventDefault();
           postItem(formData);
         }}
       >
