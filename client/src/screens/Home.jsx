@@ -7,7 +7,7 @@ export default function Home(props) {
     <div>
       <p className="welcome-home">
         <p>
-          Welcome <span className="seller-word" >{seller.username}</span>! Here are your current items:</p>
+          Welcome <span className="seller-word" >{seller && seller.username}</span>! Here are your current items:</p>
 
       </p>
       <ul>
