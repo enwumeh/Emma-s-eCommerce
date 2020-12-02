@@ -110,7 +110,7 @@ https://app.lucidchart.com/invitations/accept/f0bde52d-fbcf-4883-8974-e57326d754
 ## ToDO
 
 
-***
+
 - Assign prices to items and total prices for customers with multiple items
 
 
