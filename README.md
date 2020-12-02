@@ -37,16 +37,9 @@ _**Emma's eCommerce** is a full stack app, that allows administrators to keep tr
 <br>
 
 ### Libraries and Dependencies
+React, React Router, Rails, Ruby, Bundler, Gem
 
 
-|     Library      | Description                                                               |
-| :--------------: | :------------------------------------------------------------------------ |
-|      React       | JS library for building user interfaces                                   |
-|   React Router   | tool that allows you to handle routes in a web app with dynamic routing   |
-|     Rails        | web framework that combines Ruby with JS                                  |
-|     Ruby         | open source programming language with focus on simplicity and productivity|
-|     Bundler      | ensures that the needed gems are present in development                   |
-|     Gem          | package manager: extend or modify funcitonality in Ruby apps              |
 
 
 
@@ -93,34 +86,19 @@ src
 #### Component Breakdown
 
 
-|     Component      |    Type    | state | props | Description                                                            |
-|    :----------:    | :--------: | :---: | :---: | :---------------------------------------------------------------       |
-|    Layout          | functional |   n   |   y   | _The layout will contain the nav header and footer components          |
-|    Login           | functional |   n   |   y   | _Login will give access to reegistered sellers._                       |
-|   Register         | functional |   n   |   y   | _Register will create an account for new sellers._                     |
-|   CustomerList     | functional |   y   |   y   | _CustomerEdit will render a form needed to edit a customer's details_  |
-|   CustomerCreate   | functional |   y   |   y   | _CustomerCreate will render a form needed to add a new customer._      |
-|   CustomerDetail   | functional |   y   |   y   | _CustomerDetail will show all items a customer selected_               |
-|   ItemsList        | functional |   y   |   n   | _ItemsList will read all items._                                       |
-|   ItemEdit         | functional |   n   |   y   | _ItemsEdit will update one item._                                      |
+|     Component      |  Description                                            |
+|    :----------:    |  :----------------------------------------------------  |
+|   Layout           |  Contains the nav header and footer components          |
+|   Login            |  Gives access to reegistered sellers.                   |
+|   Register         |  Creates an account for new sellers.                    |
+|   CustomerList     |  Renders a form needed to edit a customer's details     |
+|   CustomerCreate   |  Renders a form needed to add a new customer.           |
+|   CustomerDetail   |  Shows all items a customer selected                    |
+|   ItemsList        |  Reads all items.                                       |
+|   ItemEdit         |  Updates one item.                                      |
 
 
-#### Time Estimates
 
-
-| Task                        | Priority           | Estimated Time | Time Invested | Actual Time |
-| --------------------------- | :----------------: | :------------: | :-----------: | :---------: |
-| Build out rails server      |         H          |     5 hrs      |       hrs     |     TBD     |
-| MVC DB funcitonality        |         H          |     5 hrs      |       hrs     |     TBD     |
-| Create CRUD Actions FRONTEND|         H          |     6 hrs      |       hrs     |     TBD     |
-| Create CRUD Actions BACKEND |         H          |     6 hrs      |       hrs     |     TBD     |
-|Render components/React skeleton.      H          |     8 hrs      |       hrs     |     TBD     |
-| Deployment Back and Front   |         H          |     1 hrs      |       hrs     |     TBD     |
-| CSS for screens+components  |         H          |     3 hrs      |       hrs     |     TBD     |
-| TOTAL                       |                    |     34 hrs     |       hrs     |     TBD     |
-
-
-<br>
 
 ### Server (Back End)
 
@@ -129,15 +107,12 @@ src
 
 <br>
 https://app.lucidchart.com/invitations/accept/f0bde52d-fbcf-4883-8974-e57326d754bc
-## Post-MVP
+## ToDO
 
 
 ***
 - Assign prices to items and total prices for customers with multiple items
 
-
-
-## Code Showcase
 
 
 ## Code Issues & Resolutions
