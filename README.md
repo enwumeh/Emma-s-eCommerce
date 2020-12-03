@@ -22,10 +22,10 @@ _**Emma's eCommerce** is a full stack app, that allows administrators to keep tr
 
 ### Objectives
 
-- Create skeleton/structure files for back end and front end.
-- Back End CRUD: build Rails server, database with MVC logic; build functionality and test CRUD in Postman.
+- skeleton/structure files for back end and front end.
+- Back End CRUD: Rails server, database with MVC logic; functionality and CRUD tested in Postman.
 - Front End CRUD: Render sellers, customers and items; create edit and delete functionality in Customer Details page; create new sellers and users in seperate Create pages
-- CSS for all screens and components, including Grid and Flexbox
+- styling for screens and components, including Grid and Flexbox
 - Deployment to Heroku and Netlify.
 <br>
 
