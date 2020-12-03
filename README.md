@@ -12,8 +12,7 @@
     - [Time Estimates](#time-estimates)
   - [Server (Back End)](#server-back-end)
     - [ERD Model](#erd-model)
-- [Post-MVP](#post-mvp)
-- [Code Showcase](#code-showcase)
+- [Post-MVP](#to-do)
 - [Code Issues & Resolutions](#code-issues--resolutions)
 
 <br>
