@@ -1,15 +1,13 @@
 
 
 - [Overview](#overview)
-- [MVP](#mvp)
-  - [Goals](#goals)
+  - [Objectives](#goals)
   - [Libraries and Dependencies](#libraries-and-dependencies)
   - [Client (Front End)](#client-front-end)
     - [Wireframes](#wireframes)
     - [Component Tree](#component-tree)
     - [Component Hierarchy](#component-hierarchy)
     - [Component Breakdown](#component-breakdown)
-    - [Time Estimates](#time-estimates)
   - [Server (Back End)](#server-back-end)
     - [ERD Model](#erd-model)
 - [To Do](#to-do)
