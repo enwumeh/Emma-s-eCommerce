@@ -23,11 +23,7 @@
 _**Emma's eCommerce** is a full stack app, that allows administrators to keep track of sellers, each of their customers, and the items that customers buy
 
 
-## MVP
-
-
-
-### Goals
+### Objectives
 
 - Create skeleton/structure files for back end and front end.
 - Back End CRUD: build Rails server, database with MVC logic; build functionality and test CRUD in Postman.
@@ -38,10 +34,6 @@ _**Emma's eCommerce** is a full stack app, that allows administrators to keep tr
 
 ### Libraries and Dependencies
 React, React Router, Rails, Ruby, Bundler, Gem
-
-
-
-
 
 <br>
 
